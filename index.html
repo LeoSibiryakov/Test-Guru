@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+
+            <div class="input-block">
+                <div class="logo-header">
+                    <img src="./img/logo.png" alt="" class="logo-img">
+                </div>
+
+                <form class="dropdown">
+                    <input onclick="myFunction()" class="dropbtn" placeholder="Поиск по объявлениям" &#128269>
+                    
+                </input>
+                    <ul id="myDropdown" class="dropdown-content">
+                      <li><a href="#">Кнопка настройки поиска</a></li>
+                      <li><a href="#">Кнопка настройки поиска</a></li>
+                      <li><a href="#">Кнопка настройки поиска</a></li>
+                    </ul>
+                </form>
+                
+                <button type="button" class="input-submit" value="Подать объявление" id="button">
+                    <img src="./img/cross.png" alt="">
+                    <span class="btn-value">Подать объявление</span>
+                </button>
+
+                <div class="modal">
+                    <div class="popup__container">
+                      <div class="popup__wrapper">
+                        <div id="modal">
+                          <form role="form" action="/requestFine" autocomplete="off" method="POST">
+                            <label>Имя</label>
+                            <input type="text" name="nameReq">
+                            <label>Фамилия</label>
+                            <input type="text" name="lastNameReq">
+                            <label>Отчество</label>
+                            <input type="text" name="telReq">
+                            <button type="submit" class="btn btn-success">Отправить</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div id="wrapper"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li>Деньги</li>
+                <li>Квартиры</li>
+                <li>Работа</li>
+                <li>Автомобили</li>
+                <li>Услуги</li>
+            </ul>
+        </nav>
+        <div class="main-wrapper">
+            <div class="block1"></div>
+            <div class="block2"></div>
+            <div class="block3"></div>
+            <div class="block4"></div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
